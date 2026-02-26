@@ -1,9 +1,11 @@
 <?php
 
+
 session_start();
-// kalau session login belum ada
-if(!isset($_SESSION{'login'})){
+
+if (!isset($_SESSION['login']) || !$_SESSION['login']) {
   header("Location: ../login.php");
+  exit;
 }
 
 include "../../Header/config.php"; 

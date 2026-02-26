@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $query = mysqli_query(
         $koneksi,
         "INSERT INTO tbl_voting (id_calon, tanggal, id_siswa) VALUES
-        ('$id_calon', '$tanggal', '0')"
+        ('$id_calon', '$tanggal', '')"
     );
 }
 

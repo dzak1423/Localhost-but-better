@@ -72,7 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $Alamat = $_POST['Alamat'];
                 $Password = $_POST['Password'];
 
-                $query = "INSERT INTO tbl_siswa(nama, kelas, jurusan, alamat, password)
+                $query = 
+                "INSERT INTO tbl_siswa(nama, kelas, jurusan, alamat, password)
                 VALUES ('$Nama', '$Kelas', '$Jurusan', '$Alamat', '$Password)";
             }
 
